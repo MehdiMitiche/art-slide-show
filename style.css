@@ -1,0 +1,171 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Oswald", sans-serif;
+}
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: 0.6s;
+}
+.overlay-content {
+  width: 100%;
+  height: 100%;
+  background-color: #06d6a0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay-open {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.overlay-main {
+  width: 50%;
+  height: 30%;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.overlay-title {
+  font-size: 4em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 0px 0px 40px;
+  cursor: pointer;
+}
+.overlay-text {
+  font-size: 2.5em;
+  margin: 0px 0px 20px;
+  text-align: center;
+}
+.close-btn {
+  top: 2%;
+  left: 2%;
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  font-size: 2em;
+}
+.overlay-social {
+  font-size: 2.6em;
+  display: flex;
+  justify-content: center;
+}
+.overlay-social i {
+  padding: 0px 10px;
+}
+.main {
+  position: relative;
+  top: 9vh;
+}
+.navbar-logo {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  box-sizing: border-box;
+  height: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-bottom: 1px solid black;
+  letter-spacing: 2px;
+}
+.navbar-logo span {
+  cursor: pointer;
+  font-weight: 600;
+}
+.cta-btn {
+  font-weight: 600;
+  position: absolute;
+  right: 4%;
+  font-size: 0.7em;
+  letter-spacing: initial;
+  cursor: pointer;
+  color: #06d6a0;
+  background-color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 2px solid #06d6a0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.cta-btn:hover {
+  background-color: #06d6a0;
+  color: white;
+}
+.images {
+  height: 87vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+.icon {
+  background-color: white;
+  width: 40px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4em;
+}
+i {
+  cursor: pointer;
+}
+
+.slider-container {
+  height: 100%;
+  width: calc(100% - 80px);
+}
+.images-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  transition: 0.4s;
+  transform: translateX(0px);
+}
+.jain-big {
+  width: 280px;
+  height: 400px;
+  margin: 0px 20px;
+  transition: 0.4s;
+}
+.jain-small {
+  width: 180px;
+  height: 250px;
+  margin: 0px 20px;
+  transition: 0.4s;
+}
+.jain-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.jain-big:hover {
+  width: 504px;
+  height: 600px;
+}
+.jain-small:hover {
+  width: 504px;
+  height: 600px;
+}
+
+.footer {
+  height: 4vh;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid black;
+  box-sizing: border-box;
+}
