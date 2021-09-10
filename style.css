@@ -215,6 +215,12 @@ i {
     width: 500px;
     height: 100%;
   }
+  .navbar-logo {
+    height: 14vh;
+  }
+  .main {
+    top: 14vh;
+  }
 }
 
 @media only screen and (max-width: 500px) {
