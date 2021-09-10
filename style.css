@@ -217,6 +217,29 @@ i {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .jain-big {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0px;
+    transition: 0.4s;
+  }
+  .jain-small {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0px;
+    transition: 0.4s;
+  }
+  .jain-big:hover {
+    width: 100%;
+    height: 100%;
+  }
+  .jain-small:hover {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .cta-btn {
     font-weight: 600;
@@ -224,5 +247,15 @@ i {
     right: 4%;
     font-size: 0.6em;
     padding: 4px 8px;
+  }
+  .navbar-logo {
+    justify-content: flex-start;
+    height: 10vh;
+  }
+  .main {
+    top: 10vh;
+  }
+  .navbar-logo span {
+    margin-left: 4%;
   }
 }
