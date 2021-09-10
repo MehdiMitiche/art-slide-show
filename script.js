@@ -55,3 +55,7 @@ rightIcon.addEventListener('click', ()=>{
         },450)
     }
 })
+
+window.addEventListener('resize',()=>{
+    slider.style.transform = `translateX(0px)`
+})
